@@ -1,7 +1,9 @@
 # AI LinkedIn Post Generator
 This project generates LinkedIn posts automatically using Groq LLM models and Streamlit. Users select a topic, post length, and language, and the system generates a post using few shot prompting based on example LinkedIn posts.
 
-<img src="resources/linkedin-post-generator-demo.png" width="900"/>
+<img src="resources/appscreen.png" width="900">
+
+
 Let's say a LinkedIn creator wants help writing posts. The tool analyzes example posts and generates new content using similar style patterns.
 
 ## Project Goal
