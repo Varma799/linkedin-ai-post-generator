@@ -4,6 +4,10 @@ This project generates LinkedIn posts automatically using Groq LLM models and St
 <img src="resources/linkedin-post-generator-demo.png" width="900"/>
 Let's say a LinkedIn creator wants help writing posts. The tool analyzes example posts and generates new content using similar style patterns.
 
+## Project Goal
+This project demonstrates how LLMs can be used to generate structured social media content using prompt engineering and few shot learning.
+The application provides a simple UI that allows users to experiment with different topics, languages, and content lengths.
+
 
 ## Tech Stack
 - Python
