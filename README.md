@@ -28,7 +28,7 @@ The application provides a simple UI that allows users to experiment with differ
 
 ## Features
 - Generates LinkedIn posts using Groq LLM
-- Supports topic, length, and language selection
+- Supports topic, length, language, and tone customization
 - Uses few shot prompting based on past LinkedIn posts
 - Simple Streamlit interface 
 
