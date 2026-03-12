@@ -29,11 +29,14 @@ def main():
         # Dropdown for Language
         selected_language = st.selectbox("Language", options=language_options)
 
-
+    tone = st.selectbox(
+    "Tone",
+    ["Professional", "Educational", "Motivational", "Technical"]
+    )    
 
     # Generate Button
     if st.button("Generate"):
-        post = generate_post(selected_length, selected_language, selected_tag)
+        post = generate_post(selected_length, selected_language, selected_tag,tone)
         st.write(post)
 
 

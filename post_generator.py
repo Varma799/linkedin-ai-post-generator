@@ -13,14 +13,14 @@ def get_length_str(length):
         return "11 to 15 lines"
 
 
-def generate_post(length, language, tag):
-    prompt = get_prompt(length, language, tag)
+def generate_post(length, language, tag, tone):
+    prompt = get_prompt(length, language, tag, tone)
     llm = get_llm()
     response = llm.invoke(prompt)
     return response.content
 
 
-def get_prompt(length, language, tag):
+def get_prompt(length, language, tag, tone):
     length_str = get_length_str(length)
 
     prompt = f'''
@@ -29,6 +29,7 @@ def get_prompt(length, language, tag):
     1) Topic: {tag}
     2) Length: {length_str}
     3) Language: {language}
+    4) Tone: {tone}
     If Language is Hinglish then it means it is a mix of Hindi and English. 
     The script for the generated post should always be English.
     '''
